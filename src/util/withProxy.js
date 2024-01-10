@@ -13,7 +13,7 @@ export default function(Component) {
       this.removeFromBody();
     }
 
-    componentWillReceiveProps(nextProps) {
+    UNSAFE_componentWillReceiveProps(nextProps) {
       this.removeFromBody();
       this.appendToBody(nextProps);
     }
